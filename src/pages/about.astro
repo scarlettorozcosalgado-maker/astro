@@ -1,5 +1,7 @@
 ---
-
+//Server Only
+const name = 'scarlett';
+const title ='hola mundo'
 ---
 
 <html lang="en">
@@ -9,9 +11,10 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Hola mundo</title>
+		<title>{title}</title>
 	</head>
 	<body>
-		<h1>Scarlett Orozco</h1>
+		<h1>{name}</h1>
+		<p>Momento actual: {new Date().toLocaleTimeString()}</p>
 	</body>
 </html>
